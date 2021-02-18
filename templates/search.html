@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div>
+    <form method="post" >
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" value="search" class="btn btn-outline-primary">
+    </form>
+</div>
+
+<div>
+    {% for result in results %}
+
+    <div>
+        <a href="{{ result.1 }}">
+        <h2>
+            {{ result.0 }}
+        </h2>
+    </a>
+        <p>
+            {{ result.2 }}
+        </p>
+    </div>
+
+
+
+    {% endfor %}
+</div>
+
+
+
+
+{% endblock %}
