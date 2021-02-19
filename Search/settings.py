@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = ')9b@_c)akd+h6_afit&*u@ej-fhtc&$rcm72evj#!$3#tlo18%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['*', 'https://ancient-woodland-49646.herokuapp.com/']
+ALLOWED_HOSTS = [ 'searchtheweb.herokuapp.com/']
 
 
 # Application definition
